@@ -16,6 +16,9 @@
      release-after-ms = <2000>;
      quick-release;
  };
+&sl {
+    release-after-ms = <2000>;
+};
  
 /* Layers */
 #define AL1 0
@@ -59,9 +62,6 @@
     };
 
     behaviors {
-&sl {
-    release-after-ms = <2000>;
-};
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
