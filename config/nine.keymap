@@ -138,6 +138,16 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+    stk_al2: stk-al2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TEST";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&kp>, <&sticky_alpha2>;
+        };
     };
 
     macros {
