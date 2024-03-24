@@ -138,7 +138,16 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-  };
+    };
+
+    macros {
+        sticky_alpha2: sticky_alpha2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&sl AL2>;
+        };
+    };
 //                  0       1       2                   3       4           5
 //          6       7       8       9                   10      11          12          13
 //                          14      15                  16      17
@@ -150,7 +159,7 @@
         bindings = <
                             &bhm LCTL L    &bhm LALT G     &bhm LGUI D                 &bhm RGUI H    &bhm LALT U        &bhm RCTL O
             &bhm LSHIFT I     &kp S     &kp R     &kp T                                 &kp N     &kp E         &kp A     &kp C
-                                             hl_l AL2 ESC       &hl_l NUM SPACE                  &hl_r SM1 BSPC &hl_r SM2 ENTER
+                                             &hl_l AL2 ESC       &hl_l NUM SPACE                  &hl_r SM1 BSPC &hl_r SM2 ENTER
         >;
         };
                 alpha2 {
