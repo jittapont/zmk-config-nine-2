@@ -19,7 +19,9 @@
 &sl {
     release-after-ms = <2000>;
 };
- 
+
+#define L2(keycode) &l2 &sl AL2 keycode
+
 /* Layers */
 #define AL1 0
 #define AL2 1
