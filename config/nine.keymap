@@ -32,11 +32,11 @@
 / { 
     combos {
         compatible = "zmk,combos";
-        combo_sys {
-            timeout-ms = <30>;
-            key-positions = <3 4 5>;
-            bindings = <&to SYS>;
-        };
+//        combo_sys {
+//            timeout-ms = <30>;
+//            key-positions = <3 4 5>;
+//            bindings = <&to SYS>;
+//        };
         combo_caps {
             timeout-ms = <30>;
             key-positions = <10 11 12>;
@@ -44,21 +44,26 @@
         };
         combo_num {
             timeout-ms = <30>;
+            key-positions = <7 8 9>;
+            bindings = <&sl NUM>;
+        };
+        combo_al2 {
+            timeout-ms = <30>;
             key-positions = <0 1 2>;
-            bindings = <&to NUM>;
+            bindings = <&sl AL2>;
         };
-        combo_bt  {
-            timeout-ms = <10>;
-            key-positions = <11 12>;
-            bindings = <&to BT>;
-            layers = <SM1>;
-        };
-        combo_fun  {
-            timeout-ms = <10>;
-            key-positions = <7 8>;
-            bindings = <&to FUN>;
-            layers = <AL1>;
-        };
+//        combo_bt  {
+//            timeout-ms = <10>;
+//            key-positions = <11 12>;
+//            bindings = <&to BT>;
+//            layers = <SM1>;
+//        };
+//        combo_fun  {
+//            timeout-ms = <10>;
+//            key-positions = <7 8>;
+//            bindings = <&to FUN>;
+//            layers = <AL1>;
+//        };
     };
 
     behaviors {
