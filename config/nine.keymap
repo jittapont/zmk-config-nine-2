@@ -173,7 +173,7 @@
                 label = "Base";
         bindings = <
                             &bhm LCTL L    &bhm LALT G     &bhm LGUI D                 &bhm RGUI H    &bhm LALT U        &bhm RCTL O
-            &bhm LSHIFT I     &kp S     &kp R     &kp T                                 &kp N     &kp E         &kp A     &kp C
+            &bhm LSHIFT I     &kp S     &kp R     &kp T                                 &kp N     &kp E         &kp A     &bhm RSHIFT C
                                              &hl_l AL2 ESC      &hl_l NUM SPACE                  &hl_r SM1 BSPC &hl_r SM2 ENTER
                                              // &stk_al2 ESC 0      &hl_l NUM SPACE                  &hl_r SM1 BSPC &hl_r SM2 ENTER
         >;
@@ -181,8 +181,8 @@
                 alpha2 {
                 label = "Al2";
         bindings = <
-                    &kp V       &kp W               &kp M               &kp F       &kp SQT         &kp Z
-        &kp Q       &kp J       &kp P               &kp K               &kp B       &kp DOT         &kp X       &kp Y
+                    &bhm LCTL V       &bhm LALT W               &bhm LGUI M               &bhm RGUI F        &bhm LALT SQT         &bhm RCTL Z
+        &bhm LSHIFT Q       &kp J       &kp P               &kp K               &kp B       &kp DOT         &kp X       &bhm RSHIFT Y
                                 &trans             &trans      &trans      &trans
         >;
         };
