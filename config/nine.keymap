@@ -146,7 +146,7 @@
             tapping-term-ms = <300>;
             quick-tap-ms = <125>;
             global-quick-tap;
-            bindings = <&kp>, <&sticky_alpha2>;
+            bindings = <&sticky_alpha2>, <&kp>;
         };
     };
 
