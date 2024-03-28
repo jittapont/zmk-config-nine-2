@@ -44,12 +44,12 @@
         };
         combo_num {
             timeout-ms = <30>;
-            key-positions = <7 8 9>;
+            key-positions = <0 1 2>;
             bindings = <&sl NUM>;
         };
         combo_al2 {
             timeout-ms = <30>;
-            key-positions = <0 1 2>;
+            key-positions = <7 8 9>;
             bindings = <&sl AL2>;
         };
 //        combo_bt  {
