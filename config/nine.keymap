@@ -32,6 +32,11 @@
 / { 
     combos {
         compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <30>;
+            key-positions = <7 8 9>;
+            bindings = <&kp ESC>;
+        };
 //        combo_sys {
 //            timeout-ms = <30>;
 //            key-positions = <3 4 5>;
